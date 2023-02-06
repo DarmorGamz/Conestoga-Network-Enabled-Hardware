@@ -1,0 +1,77 @@
+/*
+    Author:	Darren Morrison
+    Email:	dmorrison8832@conestogac.on.ca
+    SN:		8258832
+*/
+nav {
+    /* position: absolute; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rebeccapurple;
+}
+.logo-container {
+    margin-right: auto;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #111;
+    outline: none;
+}
+
+a:target {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #777;
+    padding: 2px;
+    text-align: center;
+    margin-top: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    outline: none;
+
+}
+* {
+    outline: none;
+}
+section {
+    margin-left: 15px;
+}
