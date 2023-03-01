@@ -1,0 +1,66 @@
+<!--
+    Author:	Darren Morrison
+    Email:	dmorrison8832@conestogac.on.ca
+    SN:		8258832
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capstone FEEDBACK</title>
+
+  <!--  Css Styles  -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles2.css">
+
+  <!-- Favicon   -->
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+  <script>
+    window.onload = function() {
+      document.forms[0].elements[0].focus();
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+      <a href="../index.html#Home"><img src="../assets/images/logo.png" alt="Company Logo"></a>
+    </div>
+    <ul>
+      <li><a href="../index.html#Home" id="Home">Home</a></li>
+      <li><a href="./project.html#Project" id="Project">Project</a></li>
+      <li><a href="./about.html#About" id="About">About</a></li>
+      <li><a href="./feedback.html#Feedback" id="Feedback">Feedback</a></li>
+      <li><a href="./feedback2.html#Feedback2" id="Feedback2">Feedback2</a></li>
+      <li><a href="./display-feedback.php#FeedbackData" id="FeedbackData">Feedback Data</a></li>
+    </ul>
+  </nav>
+
+  <header>FEEDBACK</header>
+
+  <section>
+    <form id="form" method="post" action="process-feedback2.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="postal-code">Postal Code:</label>
+      <input type="text" id="postal-code" name="postal-code" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <div class="buttons">
+        <button type="submit">Send</button>
+        <button type="reset" onclick="document.getElementById('name').focus();">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <span>Copyright &copy; 2023 Darren Morrison</span>
+  </footer>
+</body>
+</html>
